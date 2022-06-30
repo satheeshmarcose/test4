@@ -64,8 +64,10 @@
   100% { opacity:1;transform: translateX(0%)}
 }
 *{font-family:Montserrat}
+#headimg{width:100%;height:660px}
 #overlay{width:100%;height:660px;position:absolute;animation-name:slider5;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:black;opacity:.4}
 #s1{width:100%;height:660px;position:absolute;animation-name:slider1;animation-duration:2.5s;animation-timing-function:ease-in-out;}
+#s1m{width:100%;height:660px;position:absolute;animation-name:slider1;animation-duration:2.5s;animation-timing-function:ease-in-out;display:none}
 
 #sw{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider3;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:white;}
 #sb{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider2;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:black;height:660px;opacity:.9}
@@ -235,6 +237,8 @@ iframe{width:560px;height:315px}
 }
 
 @media (max-width: 800px){
+#s1{width:100%;height:660px;position:absolute;animation-name:slider1;animation-duration:2.5s;animation-timing-function:ease-in-out;display:none}
+#s1m{width:100%;height:660px;position:absolute;animation-name:slider1;animation-duration:2.5s;animation-timing-function:ease-in-out;display:inline-block}
 #matter{display:flex;flex-direction:column;margin-bottom:10px}
 #matterhead{width:40%;font-size:20px;color:#e1c173;font-family:Questrial;line-height: 220%;font-weight:bold;display:inline-block;border-left:1px solid orange}
 #mattercontent{width:100%;padding:0px;font-family:arial;line-height:200%;letter-spacing:1px;text-align:justify;color:#575757}
@@ -252,7 +256,7 @@ iframe{width:560px;height:315px}
 iframe{width:100%;height:315px}
 #presimage{width:96%;height:380px;background-color:white;margin:2%;background-image:url("0.jpg");background-size:100%;background-repeat:no-repeat;}
 #menutab{display:none;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300}
-#menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:30px;margin:5px;z-index:700;display:inline-block}
+#menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:40px;margin:19px;z-index:700;display:inline-block}
 }
 
 
@@ -268,7 +272,8 @@ iframe{width:100%;height:315px}
 <!-----header starts here--------------------------------------------------------------------------------------->
 <div id="header">
 
-<div id="s1"><img style="width:100%" src="2.jpg"></div>
+<div id="s1"><img id="headimg" src="2.jpg"></div>
+<div id="s1m"><img id="headimg" src="2m.jpg"></div>
 <div id="sb"></div>
 <div id="sw2"></div>
 <div id="sw"></div>
