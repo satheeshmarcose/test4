@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
  @font-face {
   font-family:Gilroy;
@@ -71,9 +70,13 @@
 #sb{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider2;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:black;height:660px;opacity:.9}
 #sw2{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider4;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:white;z-index:250}
 #base{width:100%;height:660px}
+#menuicon{display:none;overflow:hidden;position:absolute;}
+#menuitems{cursor:pointer}
+#menutab{display:inline-block;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300}
 #men{padding:10px;color:white;font-family:Gilroy}
 #undermenu{width:0;height:2px;background-color:#ffd265;border-radius:0px;margin-top:3px;}
 #men:hover #undermenu{width:100%;transition:.7s;}
+#clickmenu{width:100%;height:100%;float:right;position:fixed;background-color:black;text-align:center;padding-top:40px;color:white;z-index:710;overflow:hidden;left:-100%;background-color:redloverflow:hidden}
 #logo{margin-top:38px;margin-left:0%;width:150px;height:auto;display:inline-block;}
 #logoimage{width:100%;height:auto;animation-name:sliderlogo;animation-duration:1.5s;animation-timing-function:ease-in-out;}
 #types{position:absolute;margin-top:100px;padding:5%;padding-left:0%;margin-left:5%;color:#dcdcdc;font-size:65px;font-weight:normal;letter-spacing:3px;line-height: 180%;opacity:.8;animation-name:slidertypes;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial}
@@ -247,6 +250,8 @@ iframe{width:560px;height:315px}
 #videos{display:flex;flex-direction:column;padding:4%;background-color:#e9c37a;margin-top:100px;margin-bottom:20px;background-image:url("qqqqq.png");background-size:cover;width:92%}
 iframe{width:100%;height:315px}
 #presimage{width:96%;height:380px;background-color:white;margin:2%;background-image:url("0.jpg");background-size:100%;background-repeat:no-repeat;}
+#menutab{display:none;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300}
+#menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:30px;margin:5px;z-index:700;display:inline-block}
 }
 
 
@@ -255,6 +260,10 @@ iframe{width:100%;height:315px}
 </style>
 </head>
 <body style="margin:0px;background-color:#f8f8f8">
+<div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
+ <div id="clickmenu" ><!-------------clickmenu div starts here---------------->
+<div id='openmenu'><div id='menuitems'><h3>Home</h3></div><div id='menuitems'><h3>About Us</h3></div><div id='menuitems'><h3>Office Beares</h3></div><div id='menuitems'><h3>Kalamela-2022</h3></div><div id='menuitems'><h3>Membership</h3></div><div id='menuitems'><h3>Puraskaram</h3></div><div id='menuitems'><h3>Events Gallery</h3></div><div id='menuitems'><h3>Contact Us</h3></div><div id='menuitems' onclick='closer()'>close</div></div>
+</div><!------------clickmenu div ends here---------------->
 <!-----header starts here--------------------------------------------------------------------------------------->
 <div id="header">
 
@@ -267,7 +276,7 @@ iframe{width:100%;height:315px}
 <div id="welcomebutton">KALAMELA WINNERS LIST</div>
 <div style="width:100%;height:auto;position:absolute;color:white;z-index:303;text-align:center;margin-top:20px">
 <div id="logo"><img id="logoimage" src="logo.jpg"></div>
-<table id="menutab" style="display:inline-block;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300">
+<table id="menutab">
 <tr>
 <td id="men">HOME<div id="undermenu"></div></td><td id="men">ABOUT US<div id="undermenu"></div></td><td id="men">OFFICE BEARES<div id="undermenu"></div></td><td id="men">MEMBERSHIP<div id="undermenu"></div></td><td id="men">PURASKARAM<div id="undermenu"></div></td><td id="men">EVENTS<div id="undermenu"></div></td><td id="men">GALLERY<div id="undermenu"></div></td><td id="men">CONTACT US<div id="undermenu"></div></td>
 </tr>
@@ -303,7 +312,7 @@ The Chicago Malayalee Association works for the socio-cultural well being and gr
 ഷിക്കാഗോ മലയാളി അസ്സോസിയേഷന് ഇന്ന് പരമ്പര്യം കൊണ്ടും പ്രവര്ത്തനം കൊണ്ടും അമേരിക്കയിലെ ഏറ്റവും വലിയ സംഘടനയാണ്. അസ്സോസ്സിയേഷന്റെ ചരിത്രം ഷിക്കാഗോയിലെ മലയാളികളുടെ കുടിയേറ്റ ചരിത്രവുമായി ബന്ധപ്പെട്ടു കിടക്കുന്നു. മലയാളികള് ഷിക്കാഗോയില് കുടിയേറിത്തുടങ്ങിയ കാലഘട്ടത്തില് തന്നെ ഏകദേശം 150-ഓളം വരുന്ന മലയാളികളെ പങ്കെടുപ്പിച്ചുകൊണ്ടാണ് 1972-ല് ഷിക്കാഗോ മലയാളികളുടെ മാര്ഗ്ഗദീപമായി സാംസ്കാരിക സംഘടന എന്ന നിലയില് ഈ അസ്സോസ്സിയേഷന് രൂപം കൊണ്ടത്.<br><br>
 <div id="welcomebutton2">READ MORE</div>
 </div>
-<div style="text-align:center;color:black;font-family:questrial;font-weight:bold"><div id="presimage"></div>Joshy Vallikalam<br>(President)<br>312-685-6749</div>
+<div style="text-align:center;color:white"><div id="presimage"></div>Joshy Vallikalam<br>(President)<br>312-685-6749</div>
 </div>
 <!--------------imagedisplay1 starts here----------------->
 <div id="imcont">
@@ -441,5 +450,18 @@ if(dotvalue.style.display=="none")
  document.getElementById("dots").style.display="none";
  }
  }
+ 
+ 
+function menuopen(){
+document.getElementById("clickmenu").style.cssText="transform:translateX(100%);transition:.5s"
+
+}
+
+
+function closer()
+ {
+  document.getElementById("clickmenu").style.cssText="transform:translateX(-100%);transition:.5s";
+ }
+ 
  </script>
 </html>
