@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ @font-face {
+  font-family:Mollen;
+  src: url(Mollen-RegularPersonalUse.otf);
+}
+#header{width:100%;height:700px;overflow:hidden;position:absolute}
+@keyframes slider1 {
+  0%   { transform: translateX(50%);}
+  100% { transform: translateX(0%);}
+}
+@keyframes slider2 {
+  0%   { translateX(200%)}
+  30% { translateX(100%)}
+  100% { translateX(0%)}
+}
+@keyframes slider3 {
+  0%   { transform: translateX(100%);}
+ 
+  30% { transform: translateX(0%);}
+}
+
+#s1{width:100%;height:auto;position:absolute;animation-name:slider1;animation-duration:3s;animation-timing-function:ease-in-out;}
+#sb{margin-left:-100%;width:100%;height:auto;position:absolute;animation-name:slider2;animation-duration:3s;animation-timing-function:ease-in-out;}
+#sw{margin-left:-100%;width:100%;height:700px;position:absolute;animation-name:slider3;animation-duration:3s;animation-timing-function:ease-in-out;background-color:white;}
+#base{width:100%;height:700px}
+#men{padding:10px;color:WHITE}
+
+</style>
+</head>
+<body style="margin:0px">
+<!-----header starts here--------------------------------------------------------------------------------------->
+<div id="header">
+<div id="overlay"><img style="width:100%;position:absolute;z-index:100;opacity:.5" src="5.jpg"></div>
+<div id="s1"><img style="width:100%" src="2.jpg"></div>
+<div id="sb"><img style="width:100%;" src="3.jpg"></div>
+<div id="sw"></div>
+
+<div style="width:100%;height:auto;position:absolute;color:white;z-index:203;background-color:black">
+<table id="menutab" style="display:inline-block;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Mollen;letter-spacing:2px;font-weight:100">
+<tr>
+<th id="men">HOME</th><th id="men">ABOUT US<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">OFFICE BEARES<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">KALAMELA 2022<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">MEMBERSHIP<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">PURASKARAM<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">EVENTS</th><th id="men">GALLERY<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">CONTACT US</th>
+</tr>
+</table></div>
+<div id="base"></div>
+
+</div>
+<!-----header ends here--------------------------------------------------------------------------------------->
+</body>
+</html>

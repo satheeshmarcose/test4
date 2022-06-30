@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ @font-face {
+  font-family:Gilroy;
+  src: url(Gilroy-Medium.ttf);
+}
+
+ @font-face {
+  font-family:Mollen;
+  src: url(Mollen-BoldPersonalUse.otf);
+}
+@font-face {
+  font-family:Abel;
+  src: url(Abel-Regular.ttf);
+}
+
+@font-face {
+  font-family:Questrial;
+  src: url(Questrial-Regular.ttf);
+}
+#header{width:100%;height:700px;overflow:hidden;position:absolute}
+@keyframes slider1 {
+  0%   { transform: translateX(20%);}
+  100% { transform: translateX(0%);}
+}
+@keyframes slider2 {
+  0%   { transform: translateX(200%)}
+  50% { transform: translateX(100%)}
+  70% { transform: translateX(0%)}
+  100% { transform: translateX(0%)}
+}
+@keyframes slider4 {
+  0%   { transform: translateX(200%)}
+  50% { transform: translateX(200%);opacity:.7}
+  70% { transform: translateX(100%);opacity:.1}
+  100%{transform: translateX(0%)}
+}
+@keyframes slider5 {
+  0%   { opacity:0}
+  80%{opacity:0}
+  100%{opacity:.4}
+}
+@keyframes slider3 {
+  0%   { transform: translateX(100%);}
+ 
+  50% { transform: translateX(0%);}
+}
+@keyframes sliderlogo{
+  0%   { opacity:0;}
+ 
+  100% { opacity:1}
+}
+@keyframes slidertypes{
+  0%   { opacity:0;transform: translateX(20%);}
+ 30%   { opacity:0;transform: translateX(20%);}
+  100% { opacity:.6;transform: translateX(0%)}
+}
+@keyframes welcome{
+  0%   { opacity:0;transform: translateX(-40%);}
+ 70%   { opacity:0;transform: translateX(-40%);}
+  100% { opacity:1;transform: translateX(0%)}
+}
+*{font-family:Montserrat}
+#overlay{width:100%;height:660px;position:absolute;animation-name:slider5;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:black;opacity:.4}
+#s1{width:100%;height:660px;position:absolute;animation-name:slider1;animation-duration:2.5s;animation-timing-function:ease-in-out;}
+
+#sw{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider3;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:white;}
+#sb{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider2;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:black;height:660px;opacity:.9}
+#sw2{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider4;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:white;z-index:250}
+#base{width:100%;height:660px}
+#men{padding:10px;color:white;font-family:Gilroy}
+#undermenu{width:0;height:2px;background-color:#ffd265;border-radius:0px;margin-top:3px;}
+#men:hover #undermenu{width:100%;transition:.7s;}
+#logo{margin-top:38px;margin-left:0%;width:150px;height:auto;display:inline-block;}
+#logoimage{width:100%;height:auto;animation-name:sliderlogo;animation-duration:1.5s;animation-timing-function:ease-in-out;}
+#types{position:absolute;margin-top:100px;padding:5%;padding-left:0%;margin-left:5%;color:#dcdcdc;font-size:65px;font-weight:normal;letter-spacing:3px;line-height: 180%;opacity:.8;animation-name:slidertypes;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial}
+#welcomebutton{padding:20px;background-color:#ffd265;position:absolute;z-index:500;top:510px;margin-left:5%;animation-name:welcome;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial}
+#welcomebutton2{padding:20px;background-color:#ffd265;margin-left:5%;font-family:Questrial;width:200px;text-align:center}
+#matter{display:flex;flex-direction:row;margin:4%;margin-bottom:10px}
+#matterhead{width:40%;padding:2%;font-size:20px;color:#e1c173;font-family:Questrial;line-height: 220%;font-weight:bold;display:inline-block;border-left:1px solid orange}
+#mattercontent{width:60%;padding:2%;font-family:arial;line-height:200%;letter-spacing:1px;text-align:justify;inline-size:100%;color:#575757}
+#more{font-family:arial;height:0px;overflow:hidden;transition:1s}
+#presi{background-image:url("presib.jpg");background-size:100%;background-repeat:no-repeat;padding-top:100px;display:flex;flex-direction:row;}
+#presicontent{width:40%;margin-left:10%;background-color:white;padding:70px;line-height:200%;text-align:justify;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 20px 0 rgba(0, 0, 0, 0.07);font-size:14px}
+#presimage{width:300px;height:300px;background-color:yellow;margin-left:20%;background-image:url("0.jpg");background-size:100%;background-repeat:no-repeat;}
+#imagedisplay1{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("21.jpg");background-size:cover;}
+#imagedisplay2{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("22.jpg");background-size:cover}
+#imagedisplay3{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("23.jpg");background-size:cover}
+#imagedisplay4{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("24.jpg");background-size:cover}
+#imagedisplay5{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("25.jpg");background-size:cover}
+#imagedisplay6{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("27.jpg");background-size:cover}
+#imagedisplay7{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("28.jpg");background-size:cover}
+#imagecontainer{text-align:center;border:0px;display:flex;flex-direction:row;margin-left:6.5%}
+#img{margin:0px;padding:0px;border:0px;}
+#imcont{margin-top:100px;}
+#social1{display:inline-block;height:20px;padding:5px;padding-top:25px}
+#social{display:inline-block;}
+#footerindiv{width:250px;height:auto;display:inline-block;margin:20px;vertical-align:top;font-family:Abel;text-align:left}
+#footerhead{font-family:Abel;font-size:25px;padding-bottom:7px;}
+#footertype{font-family:Abel;opacity:.5}
+#h4{font-family:Questrial}
+#team{text-align:center;width:100%;padding-top:20px;padding-bottom:20px}
+#teamin{width:170px;height:auto;margin:1%;display:inline-block;color:#2e2f2e;font-family:Questrial}
+#teamimage{width:100%}
+#videos{display:flex;flex-direction:row;padding:4%;background-color:#e9c37a;margin-top:100px;margin-bottom:100px;background-image:url("qqqqq.png");background-size:cover}
+#videohead{width:40%;padding:2%;border-left:1px solid #2e2f2e;font-size:44px;font-weight:900;letter-spacing:1px;color:#2e2f2e;font-family:Questrial}
+#shutter1{background-color:#e9c37a;width:90%;margin:5%;height:0px;font-size:30px;font-family:questrial;font-weight:bold;overflow:hidden;}
+#shutter2{background-color:#e9c37a;width:90%;margin:5%;height:0px;font-size:30px;font-family:questrial;font-weight:bold;overflow:hidden;}
+#shutter3{background-color:#e9c37a;width:90%;margin:5%;height:0px;font-size:30px;font-family:questrial;font-weight:bold;overflow:hidden;}
+#shutter4{background-color:#e9c37a;width:90%;margin:5%;height:0px;font-size:30px;font-family:questrial;font-weight:bold;overflow:hidden;}
+#shutter5{background-color:#e9c37a;width:90%;margin:5%;height:0px;font-size:30px;font-family:questrial;font-weight:bold;overflow:hidden;}
+#shutter6{background-color:#e9c37a;width:90%;margin:5%;height:0px;font-size:30px;font-family:questrial;font-weight:bold;overflow:hidden;}
+#shutter1:hover #arrow1{transform: rotate(0deg);transition-delay:0;transition: all 1s;}
+#shutter2:hover #arrow2{transform: rotate(0deg);transition-delay:0;transition: all 1s;}
+#shutter3:hover #arrow3{transform: rotate(0deg);transition-delay:0;transition: all 1s;}
+#shutter4:hover #arrow4{transform: rotate(0deg);transition-delay:0;transition: all 1s;}
+#shutter5:hover #arrow5{transform: rotate(0deg);transition-delay:0;transition: all 1s;}
+#shutter6:hover #arrow6{transform: rotate(0deg);transition-delay:0;transition: all 1s;}
+#arrow1{transform:rotate(360deg);transition:1s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+#arrow2{transform:rotate(360deg);transition:1s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+#arrow3{transform:rotate(360deg);transition:1s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+#arrow4{transform:rotate(360deg);transition:1s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+#arrow5{transform:rotate(360deg);transition:1s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+#arrow6{transform:rotate(360deg);transition:1s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+#imagedisplay1:hover #imghead1{margin-top:100px;transition:1s}
+#imagedisplay2:hover #imghead2{margin-top:100px;transition:1s}
+#imagedisplay3:hover #imghead3{margin-top:100px;transition:1s}
+#imagedisplay4:hover #imghead4{margin-top:100px;transition:1s}
+#imagedisplay5:hover #imghead5{margin-top:100px;transition:1s}
+#imagedisplay6:hover #imghead6{margin-top:100px;transition:1s}
+#imghead1{margin-top:350px;transition: all 0.5s;font-family:questrial}
+#imghead2{margin-top:350px;transition: all 0.5s;font-family:questrial}
+#imghead3{margin-top:350px;transition: all 0.5s;font-family:questrial}
+#imghead4{margin-top:350px;transition: all 0.5s;font-family:questrial}
+#imghead5{margin-top:350px;transition: all 0.5s;font-family:questrial}
+#imghead6{margin-top:350px;transition: all 0.5s;font-family:questrial}
+@keyframes shutterup1{
+0%   { opacity:0;height:0px}
+1%{opacity:.95;height:295px;}
+100%{opacity:.95;height:295px;}
+}
+
+@keyframes shutterup2{
+0%   { opacity:0;height:0px}
+1%{opacity:.95;height:295px;}
+100%{opacity:.95;height:295px;}
+}
+
+@keyframes shutterup3{
+0%   { opacity:0;height:0px}
+1%{opacity:.95;height:295px;}
+100%{opacity:.95;height:295px;}
+}
+
+@keyframes shutterup4{
+0%   { opacity:0;height:0px}
+1%{opacity:.95;height:295px;}
+100%{opacity:.95;height:295px;}
+}
+
+@keyframes shutterup5{
+0%   { opacity:0;height:0px}
+1%{opacity:.95;height:295px;}
+100%{opacity:.95;height:295px;}
+}
+
+@keyframes shutterup6{
+0%   { opacity:0;height:0px}
+1%{opacity:.95;height:295px;}
+100%{opacity:.95;height:295px;}
+}
+
+@keyframes shuttercloser1{
+0%{opacity:.95;height:295px;}
+100%{opacity:.1;height:0px;}
+}
+@keyframes shuttercloser2{
+0%{opacity:.95;height:295px;}
+100%{opacity:.1;height:0px;}
+}
+@keyframes shuttercloser3{
+0%{opacity:.95;height:295px;}
+100%{opacity:.1;height:0px;}
+}
+@keyframes shuttercloser4{
+0%{opacity:.95;height:295px;}
+100%{opacity:.1;height:0px;}
+}
+@keyframes shuttercloser5{
+0%{opacity:.95;height:295px;}
+100%{opacity:.1;height:0px;}
+}
+@keyframes shuttercloser6{
+0%{opacity:.95;height:295px;}
+100%{opacity:.1;height:0px;}
+}
+
+@keyframes arrowup1{
+0%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+10%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+100%{transform: rotate(0deg);transition-delay:0;transition: all 2s;}
+}
+@keyframes arrowup2{
+0%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+10%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+100%{transform: rotate(0deg);transition-delay:0;transition: all 2s;}
+}
+@keyframes arrowup3{
+0%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+10%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+100%{transform: rotate(0deg);transition-delay:0;transition: all 2s;}
+}
+@keyframes arrowup4{
+0%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+10%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+100%{transform: rotate(0deg);transition-delay:0;transition: all 2s;}
+}
+@keyframes arrowup5{
+0%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+10%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+100%{transform: rotate(0deg);transition-delay:0;transition: all 2s;}
+}
+@keyframes arrowup6{
+0%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+10%   {transform:rotate(360deg);transition:2s;transition-timing-function:cubic-bezier(1, 0.8, 0.5, 1);}
+100%{transform: rotate(0deg);transition-delay:0;transition: all 2s;}
+}
+
+</style>
+</head>
+<body style="margin:0px;background-color:#f8f8f8">
+<!-----header starts here--------------------------------------------------------------------------------------->
+<div id="header">
+
+<div id="s1"><img style="width:100%" src="2.jpg"></div>
+<div id="sb"></div>
+<div id="sw2"></div>
+<div id="sw"></div>
+<div id="types">Chicago<br>MALAYALEE<br>ASSOCIATION</div>
+<div id="overlay"></div>
+<div id="welcomebutton">KALAMELA WINNERS LIST</div>
+<div style="width:100%;height:auto;position:absolute;color:white;z-index:303;text-align:center;margin-top:20px">
+<div id="logo"><img id="logoimage" src="logo.jpg"></div>
+<table id="menutab" style="display:inline-block;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300">
+<tr>
+<td id="men">HOME<div id="undermenu"></div></td><td id="men">ABOUT US<div id="undermenu"></div></td><td id="men">OFFICE BEARES<div id="undermenu"></div></td><td id="men">MEMBERSHIP<div id="undermenu"></div></td><td id="men">PURASKARAM<div id="undermenu"></div></td><td id="men">EVENTS<div id="undermenu"></div></td><td id="men">GALLERY<div id="undermenu"></div></td><td id="men">CONTACT US<div id="undermenu"></div></td>
+</tr>
+</table></div>
+<div id="base"></div>
+
+</div>
+<div id="base"></div>
+<!-----header ends here--------------------------------------------------------------------------------------->
+<!---------------matter div starts here--------------------------------------------->
+<div id="matter">
+<div id="matterhead">WELCOME TO<br><span style="font-size:44px;font-weight:900;letter-spacing:1px;color:#2e2f2e;font-family:Questrial">Chicago Malayalee Association (CMA)</span></div>
+<div id="mattercontent">The Chicago Malayalee Association, established in 1972, is the oldest and largest Malayalee association in North America. It is a registered, non-profit, socio – cultural organization in the State of Illinois, and has almost 2500 registered members now.
+
+The purpose of this Association is to promote social, cultural, charitable, educational, and literary activities among the Malayalees of Metropolitan Chicago area, all over Illinois and the Midwest region. The Chicago Malayalee Association organizes co-operative and charitable activities in the general interest and well-being of the members of the association as and when required, and coordinates such activities with other communities..<span id="dots">...</span>
+<div id="more"><br>The Association tries to preserve and promote Indian culture, especially Kerala culture, through various festivals and events organized throughout the year. Some events conducted annually are Onam festival, Kerala Piravi, Christmas and New year Celebration, Kalamela/Youth Festival, Indian Independence Day Parade, Picnic, Basketball tournament, Volleyball tournament, Cheettukali Malsaram (Cards game), Socio-cultural symposium, and Charcha Vedi (Debate Forum). The Association has a Youth Forum, a Senior’s Forum, and a Women’s Forum, to cater to the various needs and interests of the different groups.
+The Women’s forum is one of the most active branches of the association and it has a vibrant and enthusiastic group of women working for it and they conduct various programs throughout the year.<br><br>
+
+The Chicago Malayalee Association (CMA) conducts charity events as a part of the regular activities of the organization. CMA donated $25,000 to the Kerala Flood relief fund in 2017. In the last few years, CMA donated towards building twelve houses for under privileged families and widows in Kerala, with the help of Mrs. M. S. Sunil (Sunil teacher), a social activist based in Kerala,
+The Chicago Malayalee Association works for the socio-cultural well being and growth of the Malayalee community holding on tight to the traditions of Kerala culture.</div>
+<span id="morebutton" style="color:#e94c75" onclick="enlarge()">show more</span></div>
+</div>
+
+<!-----------presidentspeech starts here---------------------->
+<div id="presi">
+<div id="presicontent">
+<div style="font-size:44px;font-weight:900;letter-spacing:1px;color:#2e2f2e;font-family:Questrial;border-left:1px solid orange">President's Message.<br><br></div>
+
+പ്രിയമുള്ളവരേ,<br><br>
+
+നിങ്ങൾക്ക് ഏവർക്കും ചിക്കാഗോ മലയാളി അസോസ്സിയേഷൻറെ നന്മകൾ നേരുന്നു. നമ്മുടെ ഈ സംഘടന പതിറ്റാണ്ടുകൾ പൂർത്തിയാക്കി ഗോൾഡൻ ജൂബിലിയുടെ അരികിൽ എത്തിനില്ക്കുന്നു എന്ന് പറയുമ്പോൾ അതിയായ ചാരിദാർത്ഥ്യം ഉണ്ട്.<br><br>
+
+ഷിക്കാഗോ മലയാളി അസ്സോസിയേഷന് ഇന്ന് പരമ്പര്യം കൊണ്ടും പ്രവര്ത്തനം കൊണ്ടും അമേരിക്കയിലെ ഏറ്റവും വലിയ സംഘടനയാണ്. അസ്സോസ്സിയേഷന്റെ ചരിത്രം ഷിക്കാഗോയിലെ മലയാളികളുടെ കുടിയേറ്റ ചരിത്രവുമായി ബന്ധപ്പെട്ടു കിടക്കുന്നു. മലയാളികള് ഷിക്കാഗോയില് കുടിയേറിത്തുടങ്ങിയ കാലഘട്ടത്തില് തന്നെ ഏകദേശം 150-ഓളം വരുന്ന മലയാളികളെ പങ്കെടുപ്പിച്ചുകൊണ്ടാണ് 1972-ല് ഷിക്കാഗോ മലയാളികളുടെ മാര്ഗ്ഗദീപമായി സാംസ്കാരിക സംഘടന എന്ന നിലയില് ഈ അസ്സോസ്സിയേഷന് രൂപം കൊണ്ടത്.<br><br>
+<div id="welcomebutton2">READ MORE</div>
+</div>
+<div style="text-align:center;color:white"><div id="presimage"></div>Joshy Vallikalam<br>(President)<br>312-685-6749</div>
+</div>
+<!--------------imagedisplay1 starts here----------------->
+<div id="imcont">
+<div id="imagecontainer">
+<div id="imagedisplay1" onmouseover="shutterprogram1()" onmouseleave="shutterclose1()"><div id="shutter1"><div id="imghead1">View Full Size</div><br><img id="arrow1" src="EXPAND ARROWS.png"></div></div>
+<div id="imagedisplay2" onmouseover="shutterprogram2()" onmouseleave="shutterclose2()"><div id="shutter2"><div id="imghead2">View Full Size</div><br><img id="arrow2" src="EXPAND ARROWS.png"></div></div>
+<div id="imagedisplay3" onmouseover="shutterprogram3()" onmouseleave="shutterclose3()"><div id="shutter3"><div id="imghead3">View Full Size</div><br><img id="arrow3" src="EXPAND ARROWS.png"></div></div>
+</div><!--------------imagedisplay1 ends here----------------->
+<!--------------imagedisplay2 starts here----------------->
+<div id="imcont">
+<div id="imagecontainer">
+<div id="imagedisplay4" onmouseover="shutterprogram4()" onmouseleave="shutterclose4()"><div id="shutter4"><div id="imghead4">View Full Size</div><br><img id="arrow4" src="EXPAND ARROWS.png"></div></div>
+<div id="imagedisplay5" onmouseover="shutterprogram5()" onmouseleave="shutterclose5()"><div id="shutter5"><div id="imghead5">View Full Size</div><br><img id="arrow5" src="EXPAND ARROWS.png"></div></div>
+<div id="imagedisplay6" onmouseover="shutterprogram6()" onmouseleave="shutterclose6()"><div id="shutter6"><div id="imghead6">View Full Size</div><br><img id="arrow6" src="EXPAND ARROWS.png"></div></div>
+</div><!--------------imagedisplay2 ends here----------------->
+<!-----------video div starts here------------------>
+<div id="videos">
+<div id="videohead">Watch<br>Our<br>Latest<br>Videos.</div>
+<div id="yt"><iframe width="560" height="315" src="https://www.youtube.com/embed/a2YhwwnlRgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+</div>
+<!-------------video div ends here------------------->
+
+<!-----------team div starts here---------->
+<div id="team">
+<h1 style="color:#2e2f2e;font-weight:bold;font-family:questrial;font-size:40px">Leadership Team</h1>
+<div id="teamin"><img id="teamimage" src="0.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Joshy Vallikalam</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">President</h5></div>
+<div id="teamin"><img id="teamimage" src="1.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Vivish Jacob</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Jt. Treasurer</h5></div>
+<div id="teamin"><img id="teamimage" src="2.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Leela Joseph</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Secretary</h5></div>
+<div id="teamin"><img id="teamimage" src="3.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Shiny Haridas</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Treasurer</h5></div>
+<div id="teamin"><img id="teamimage" src="4.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Michael Maniparampil</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Vice President</h5></div>
+<div id="teamin"><img id="teamimage" src="5.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Dr. Sibil Philip</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Jt. Secretary</h5></div>
+</div> <!-------------team div ends here--------------->
+
+
+<!------------footer starts------------>
+<div style="text-align:center;padding-top:30px;padding-bottom:20px;color:white;background-color:#dadada;background-image:url('footer.jpg');background-size:cover;">
+<div id="footerindiv">
+<div id="footerhead">QUICK CONTACT</div>
+<div id="footertype">Joshy Vallikalam (President)<br>312-685-6749</div>
+<div id="footertype">Leela Joseph (Secretary)<br>224-578-5262</div>
+<div id="footertype">Shiny Haridas (Treasurer)<br>630-290-7143</div>
+</div>
+<div id="footerindiv">
+<div id="footerhead">QUICK LINKS</div>
+<div id="footertype">Chicago Malayalee Association</div>
+<div id="footertype">President’s Message</div>
+<div id="footertype">CMA Kalamela-2022 Information</div>
+<div id="footertype">Board 2021-2023</div>
+<div id="footertype">Constitution</div>
+<div id="footertype">Application for Life Membership</div>
+</div>
+<div id="footerindiv">
+<div id="footerhead">OUR OFFICE</div>
+<div id="footertype">Chicago Malayalee Association<br>
+834 E Rand Rd, Suite 13,<br>
+Mount Prospect,<br>
+IL-60056, U.S.A.</div>
+</div>
+<div style="width:250px;height:auto;display:inline-block;margin:20px;vertical-align:top;font-family:Abel">
+<div id="social"><img id="social1" src="fb.png"></div>
+<div id="social"><img id="social1" src="ins.png"></div>
+<div id="social"><img id="social1" src="tt.png"></div>
+<div id="social"><img id="social1" src="yt.png"></div>
+</div>
+
+</div><!------------footer ends------------>
+</body>
+
+<script>
+function shutterprogram1()
+{
+document.getElementById("shutter1").style.cssText="animation-name:shutterup1;animation-duration:60s;animation-timing-function:ease-in-out";
+}
+function shutterprogram2()
+{
+document.getElementById("shutter2").style.cssText="animation-name:shutterup2;animation-duration:60s;animation-timing-function:ease-in-out";
+}
+function shutterprogram3()
+{
+document.getElementById("shutter3").style.cssText="animation-name:shutterup3;animation-duration:60s;animation-timing-function:ease-in-out";
+}
+function shutterprogram4()
+{
+document.getElementById("shutter4").style.cssText="animation-name:shutterup4;animation-duration:60s;animation-timing-function:ease-in-out";
+}
+function shutterprogram5()
+{
+document.getElementById("shutter5").style.cssText="animation-name:shutterup5;animation-duration:60s;animation-timing-function:ease-in-out";
+}
+function shutterprogram6()
+{
+document.getElementById("shutter6").style.cssText="animation-name:shutterup6;animation-duration:60s;animation-timing-function:ease-in-out";
+}
+
+function shutterclose1()
+{
+document.getElementById("shutter1").style.cssText="animation-name:shuttercloser1;animation-duration:.5s;animation-timing-function:ease-in-out";
+}
+function shutterclose2()
+{
+document.getElementById("shutter2").style.cssText="animation-name:shuttercloser2;animation-duration:.5s;animation-timing-function:ease-in-out";
+}
+function shutterclose3()
+{
+document.getElementById("shutter3").style.cssText="animation-name:shuttercloser3;animation-duration:.5s;animation-timing-function:ease-in-out";
+}
+function shutterclose4()
+{
+document.getElementById("shutter4").style.cssText="animation-name:shuttercloser4;animation-duration:.5s;animation-timing-function:ease-in-out";
+}
+function shutterclose5()
+{
+document.getElementById("shutter5").style.cssText="animation-name:shuttercloser5;animation-duration:.5s;animation-timing-function:ease-in-out";
+}
+function shutterclose6()
+{
+document.getElementById("shutter6").style.cssText="animation-name:shuttercloser6;animation-duration:.5s;animation-timing-function:ease-in-out";
+}
+function enlarge(){
+var dotvalue=document.getElementById("dots");
+var morevalue=document.getElementById("more");
+var morebuttonvalue=document.getElementById("morebutton");
+if(dotvalue.style.display=="none")
+ {document.getElementById("morebutton").innerHTML="show more";
+ document.getElementById("more").style.cssText="height:0px;transition:.5s;transition-timing-function:ease-in-out;overflow:hidden";
+ document.getElementById("dots").style.display="inline";
+ }
+ else
+ {
+ document.getElementById("morebutton").innerHTML="show less";
+ document.getElementById("more").style.cssText="height:auto;transition:.5s;transition-timing-function:ease-in-out;overflow:hidden";
+ document.getElementById("dots").style.display="none";
+ }
+ }
+ </script>
+</html>
