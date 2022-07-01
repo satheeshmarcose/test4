@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
  @font-face {
   font-family:Gilroy;
@@ -49,9 +49,9 @@
   50% { transform: translateX(0%);}
 }
 @keyframes sliderlogo{
-  0%   { opacity:0;}
+  0% {opacity:0.1;}
  
-  100% { opacity:1}
+  100%{opacity:1;}
 }
 @keyframes slidertypes{
   0%   { opacity:0;transform: translateX(20%);}
@@ -74,16 +74,17 @@
 #sw2{margin-left:-100%;width:100%;height:660px;position:absolute;animation-name:slider4;animation-duration:2.5s;animation-timing-function:ease-in-out;background-color:white;z-index:250}
 #base{width:100%;height:660px}
 #menuicon{display:none;overflow:hidden;position:absolute;}
-#menuitems{cursor:pointer}
-#menutab{display:inline-block;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300}
+#menuitems{cursor:pointer;font-family:questrial;padding:5px}
+h3{font-family:questrial;letter-spacing:2px;color:black}
+#menutab{display:inline-block;margin-left:10%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300}
 #men{padding:10px;color:white;font-family:Gilroy}
 #undermenu{width:0;height:2px;background-color:#ffd265;border-radius:0px;margin-top:3px;}
 #men:hover #undermenu{width:100%;transition:.7s;}
-#clickmenu{width:100%;height:100%;float:right;position:fixed;background-color:black;text-align:center;padding-top:40px;color:white;z-index:710;overflow:hidden;left:-100%;background-color:redloverflow:hidden}
-#logo{margin-top:38px;margin-left:0%;width:150px;height:auto;display:inline-block;}
+#clickmenu{width:100%;height:100%;float:right;position:fixed;background-color:#e9c37a;text-align:center;padding-top:40px;color:white;z-index:710;overflow:hidden;left:-100%;background-color:redloverflow:hidden}
+#logo{margin-top:38px;margin-left:3.5%;width:150px;height:auto;display:inline-block;}
 #logoimage{width:100%;height:auto;animation-name:sliderlogo;animation-duration:1.5s;animation-timing-function:ease-in-out;}
-#types{position:absolute;margin-top:100px;padding:5%;padding-left:0%;margin-left:5%;color:#dcdcdc;font-size:65px;font-weight:normal;letter-spacing:3px;line-height: 180%;opacity:.8;animation-name:slidertypes;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial}
-#welcomebutton{padding:20px;background-color:#ffd265;position:absolute;z-index:500;top:510px;margin-left:5%;animation-name:welcome;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial}
+#types{position:absolute;margin-top:90px;padding:5%;padding-left:0%;margin-left:5%;color:white;font-size:65px;font-weight:normal;letter-spacing:3px;line-height: 180%;opacity:.9;animation-name:slidertypes;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial;text-shadow: 2px 2px 15px rgba(0,0,0,.5);}
+#welcomebutton{padding:20px;background-color:#ffd265;position:absolute;z-index:500;top:540px;margin-left:5%;animation-name:welcome;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial;border-radius:10px}
 #welcomebutton2{padding:20px;background-color:#ffd265;margin-left:5%;font-family:Questrial;width:200px;text-align:center}
 #matter{display:flex;flex-direction:row;margin:4%;margin-bottom:10px}
 #matterhead{width:40%;padding:2%;font-size:20px;color:#e1c173;font-family:Questrial;line-height: 220%;font-weight:bold;display:inline-block;border-left:1px solid orange}
@@ -91,7 +92,9 @@
 #more{font-family:arial;height:0px;overflow:hidden;transition:1s}
 #presi{background-image:url("presib.jpg");background-size:100%;background-repeat:no-repeat;padding-top:100px;display:flex;flex-direction:row;}
 #presicontent{width:40%;margin-left:10%;background-color:white;padding:70px;line-height:200%;text-align:justify;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 20px 0 rgba(0, 0, 0, 0.07);font-size:14px}
-#presimage{width:300px;height:300px;background-color:yellow;margin-left:20%;background-image:url("0.jpg");background-size:100%;background-repeat:no-repeat;}
+#presimage{width:300px;height:300px;background-color:yellow;background-image:url("0.jpg");background-size:100%;background-repeat:no-repeat;margin-left:auto;margin-right:auto}
+#presimcont1{text-align:center;color:black;font-family:questrial;display:none}
+#presimcont2{text-align:center;color:white;font-family:questrial;display:inline-block;width:40%;}
 #imagedisplay1{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("21.jpg");background-size:cover;}
 #imagedisplay2{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("22.jpg");background-size:cover}
 #imagedisplay3{width:29%;height:330px;overflow:hidden;margin:1.2%;padding:0px;border:0px;background-image:url("23.jpg");background-size:cover}
@@ -146,38 +149,38 @@
 iframe{width:560px;height:315px}
 @keyframes shutterup1{
 0%   { opacity:0;height:0px}
-1%{opacity:.95;height:295px;}
-100%{opacity:.95;height:295px;}
+1%{opacity:.85;height:295px;}
+100%{opacity:.85;height:295px;}
 }
 
 @keyframes shutterup2{
 0%   { opacity:0;height:0px}
-1%{opacity:.95;height:295px;}
-100%{opacity:.95;height:295px;}
+1%{opacity:.85;height:295px;}
+100%{opacity:.85;height:295px;}
 }
 
 @keyframes shutterup3{
 0%   { opacity:0;height:0px}
-1%{opacity:.95;height:295px;}
-100%{opacity:.95;height:295px;}
+1%{opacity:.85;height:295px;}
+100%{opacity:.85;height:295px;}
 }
 
 @keyframes shutterup4{
 0%   { opacity:0;height:0px}
-1%{opacity:.95;height:295px;}
-100%{opacity:.95;height:295px;}
+1%{opacity:.85;height:295px;}
+100%{opacity:.85;height:295px;}
 }
 
 @keyframes shutterup5{
 0%   { opacity:0;height:0px}
-1%{opacity:.95;height:295px;}
-100%{opacity:.95;height:295px;}
+1%{opacity:.85;height:295px;}
+100%{opacity:.85;height:295px;}
 }
 
 @keyframes shutterup6{
 0%   { opacity:0;height:0px}
-1%{opacity:.95;height:295px;}
-100%{opacity:.95;height:295px;}
+1%{opacity:.85;height:295px;}
+100%{opacity:.85;height:295px;}
 }
 
 @keyframes shuttercloser1{
@@ -244,6 +247,8 @@ iframe{width:560px;height:315px}
 #mattercontent{width:100%;padding:0px;font-family:arial;line-height:200%;letter-spacing:1px;text-align:justify;color:#575757}
 #presi{background-image:url("presib.jpg");background-size:100%;background-repeat:no-repeat;padding-top:100px;display:flex;flex-direction:column;}
 #presicontent{width:85%;margin:2.5%;background-color:white;padding:5%;line-height:200%;text-align:justify;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 20px 0 rgba(0, 0, 0, 0.07);font-size:14px}
+#presimcont1{text-align:center;color:black;font-family:questrial;display:inline-block;width:100%}
+#presimcont2{text-align:center;color:black;font-family:questrial;display:none}
 #imagecontainer{text-align:center;border:0px;display:flex;flex-direction:column;margin-left:0%}
 #imagedisplay1{width:96%;height:330px;overflow:hidden;margin:2%;padding:0px;border:0px;background-image:url("21.jpg");background-size:cover;}
 #imagedisplay2{width:96%;height:330px;overflow:hidden;margin:2%;padding:0px;border:0px;background-image:url("22.jpg");background-size:cover}
@@ -256,7 +261,9 @@ iframe{width:560px;height:315px}
 iframe{width:100%;height:315px}
 #presimage{width:96%;height:380px;background-color:white;margin:2%;background-image:url("0.jpg");background-size:100%;background-repeat:no-repeat;}
 #menutab{display:none;margin-left:4%;margin-top:25px;vertical-align:top;font-family:Gilroy;letter-spacing:2px;font-weight:300}
-#menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:40px;margin:19px;z-index:700;display:inline-block}
+#menuicon{width:auto;height:auto;overflow:hidden;position:absolute;top:22px;margin:19px;z-index:700;display:inline-block}
+#types{position:absolute;margin-top:150px;padding:5%;padding-left:0%;margin-left:5%;color:white;font-size:55px;font-weight:normal;letter-spacing:3px;line-height: 180%;opacity:.9;animation-name:slidertypes;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial;text-shadow: 2px 2px 15px rgba(0,0,0,.5);}
+#welcomebutton{padding:20px;background-color:#ffd265;position:absolute;z-index:500;top:510px;left:auto;right:auto;animation-name:welcome;animation-duration:3s;animation-timing-function:ease-in-out;font-family:Questrial;border-radius:10px}
 }
 
 
@@ -267,7 +274,7 @@ iframe{width:100%;height:315px}
 <body style="margin:0px;background-color:#f8f8f8">
 <div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
  <div id="clickmenu" ><!-------------clickmenu div starts here---------------->
-<div id='openmenu'><div id='menuitems'><h3>Home</h3></div><div id='menuitems'><h3>About Us</h3></div><div id='menuitems'><h3>Office Beares</h3></div><div id='menuitems'><h3>Kalamela-2022</h3></div><div id='menuitems'><h3>Membership</h3></div><div id='menuitems'><h3>Puraskaram</h3></div><div id='menuitems'><h3>Events Gallery</h3></div><div id='menuitems'><h3>Contact Us</h3></div><div id='menuitems' onclick='closer()'>close</div></div>
+<div id='openmenu' style="text-align:left;margin-left:20%;margin-top:5px;background-color:#e9c37a"><div id='menuitems'><h3>Home</h3></div><div id='menuitems'><h3>About Us</h3></div><div id='menuitems'><h3>Office Beares</h3></div><div id='menuitems'><h3>Kalamela-2022</h3></div><div id='menuitems'><h3>Membership</h3></div><div id='menuitems'><h3>Puraskaram</h3></div><div id='menuitems'><h3>Events Gallery</h3></div><div id='menuitems'><h3>Contact Us</h3></div><div id='menuitems' onclick='closer()'>close</div></div>
 </div><!------------clickmenu div ends here---------------->
 <!-----header starts here--------------------------------------------------------------------------------------->
 <div id="header">
@@ -277,7 +284,7 @@ iframe{width:100%;height:315px}
 <div id="sb"></div>
 <div id="sw2"></div>
 <div id="sw"></div>
-<div id="types">Chicago<br>MALAYALEE<br>ASSOCIATION</div>
+<div id="types">Chicago<br>Malayalee<br>Association</div>
 <div id="overlay"></div>
 <div id="welcomebutton">KALAMELA WINNERS LIST</div>
 <div style="width:100%;height:auto;position:absolute;color:white;z-index:303;text-align:center;margin-top:20px">
@@ -310,7 +317,7 @@ The Chicago Malayalee Association works for the socio-cultural well being and gr
 <div id="presi">
 <div id="presicontent">
 <div style="font-size:44px;font-weight:900;letter-spacing:1px;color:#2e2f2e;font-family:Questrial;border-left:1px solid orange">President's Message.<br><br></div>
-
+<div id="presimcont1" style="font-family:questrial"><div id="presimage"></div><div style="width:100%;font-family:questrial">Joshy Vallikalam<br>(President)<br>312-685-6749</div></div><br>
 പ്രിയമുള്ളവരേ,<br><br>
 
 നിങ്ങൾക്ക് ഏവർക്കും ചിക്കാഗോ മലയാളി അസോസ്സിയേഷൻറെ നന്മകൾ നേരുന്നു. നമ്മുടെ ഈ സംഘടന പതിറ്റാണ്ടുകൾ പൂർത്തിയാക്കി ഗോൾഡൻ ജൂബിലിയുടെ അരികിൽ എത്തിനില്ക്കുന്നു എന്ന് പറയുമ്പോൾ അതിയായ ചാരിദാർത്ഥ്യം ഉണ്ട്.<br><br>
@@ -318,7 +325,7 @@ The Chicago Malayalee Association works for the socio-cultural well being and gr
 ഷിക്കാഗോ മലയാളി അസ്സോസിയേഷന് ഇന്ന് പരമ്പര്യം കൊണ്ടും പ്രവര്ത്തനം കൊണ്ടും അമേരിക്കയിലെ ഏറ്റവും വലിയ സംഘടനയാണ്. അസ്സോസ്സിയേഷന്റെ ചരിത്രം ഷിക്കാഗോയിലെ മലയാളികളുടെ കുടിയേറ്റ ചരിത്രവുമായി ബന്ധപ്പെട്ടു കിടക്കുന്നു. മലയാളികള് ഷിക്കാഗോയില് കുടിയേറിത്തുടങ്ങിയ കാലഘട്ടത്തില് തന്നെ ഏകദേശം 150-ഓളം വരുന്ന മലയാളികളെ പങ്കെടുപ്പിച്ചുകൊണ്ടാണ് 1972-ല് ഷിക്കാഗോ മലയാളികളുടെ മാര്ഗ്ഗദീപമായി സാംസ്കാരിക സംഘടന എന്ന നിലയില് ഈ അസ്സോസ്സിയേഷന് രൂപം കൊണ്ടത്.<br><br>
 <div id="welcomebutton2">READ MORE</div>
 </div>
-<div style="text-align:center;color:white"><div id="presimage"></div>Joshy Vallikalam<br>(President)<br>312-685-6749</div>
+<div id="presimcont2" style="font-family:questrial"><div id="presimage"></div><br>Joshy Vallikalam<br>(President)<br>312-685-6749</div>
 </div>
 <!--------------imagedisplay1 starts here----------------->
 <div id="imcont">
@@ -335,6 +342,7 @@ The Chicago Malayalee Association works for the socio-cultural well being and gr
 <div id="imagedisplay6" onmouseover="shutterprogram6()" onmouseleave="shutterclose6()"><div id="shutter6"><div id="imghead6">View Full Size</div><br><img id="arrow6" src="EXPAND ARROWS.png"></div></div>
 </div>
 </div><!--------------imagedisplay2 ends here----------------->
+<br><div id="welcomebutton2" style="margin-left:auto;margin-right:auto">IMAGE GALLERY</div><br>
 <!-----------video div starts here------------------>
 <div id="videos">
 <div id="videohead">Watch<br>Our<br>Latest<br>Videos.<br><br><div id="welcomebutton2" style="font-size:14px;background-color:white">WATCH ALL VIDEOS</div></div>
@@ -353,6 +361,7 @@ The Chicago Malayalee Association works for the socio-cultural well being and gr
 <div id="teamin"><img id="teamimage" src="3.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Shiny Haridas</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Treasurer</h5></div>
 <div id="teamin"><img id="teamimage" src="4.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Michael Maniparampil</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Vice President</h5></div>
 <div id="teamin"><img id="teamimage" src="5.png"><h4 style="margin:0px;padding:0px;padding-top:15px;font-family:questrial">Dr. Sibil Philip</h4><h5 style="margin:0px;padding:0px;padding-bottom:40px;font-family:questrial">Jt. Secretary</h5></div>
+<div id="welcomebutton2" style="margin-left:auto;margin-right:auto">VIEW ENTIRE TEAM</div><br>
 </div> <!-------------team div ends here--------------->
 
 
@@ -393,7 +402,7 @@ IL-60056, U.S.A.</div>
 <script>
 function shutterprogram1()
 {
-document.getElementById("shutter1").style.cssText="animation-name:shutterup1;animation-duration:60s;animation-timing-function:ease-in-out";
+document.getElementById("shutter1").style.cssText="animation-name:shutterup1;animation-duration:60s;animation-timing-function:ease-in-out;";
 }
 function shutterprogram2()
 {
